@@ -1,0 +1,17 @@
+[package]
+name = "rustdb"
+version = "0.1.0"
+edition = "2021"
+description = "A relational database engine written in Rust, targeting PostgreSQL wire-protocol compatibility."
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "rustdb"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rustdb"
+path = "src/main.rs"
+
+[profile.release]
+debug = true   # keep symbols for profiling/benchmarking in Phase 7
